@@ -20,14 +20,70 @@ We did a **five implementations** and organized our work as for every cold-start
 
 The algorithms we used in this project are;
 - [Bert4ColdStart model](#Algorithm-1:-Bert4ColdStart)
-- [Peter4ColdStart model](#Algorithm-1:-Bert4ColdStart)
-- [GRURec model](#Algorithm-1:-Bert4ColdStart)
-- [Hybrid recommender model](#Algorithm-1:-Bert4ColdStart)
-- [Bert4ColdStart model for specific gender](#Algorithm-1:-Bert4ColdStart)
+- [Peter4ColdStart model](#Algorithm-2:-Bert4ColdStart)
+- [GRURec model](#Algorithm-3:-Bert4ColdStart)
+- [Hybrid recommender model](#Algorithm-4:-Bert4ColdStart)
+- [Bert4ColdStart model for specific gender](#Algorithm-5:-Bert4ColdStart)
 
 More information on each algorithm can be found in the descriptions below.
 
-### Algorithm 1: Bert4ColdStart
+### Algorithm 1: Bert4ColdStart model
+todo check if need to handle all the ev matrics or not
+| |Description |
+|:-----------|:----------|
+|Evaluation matricis|we used this model in all cold-start csv files and used Recall@20 & Recall@5​ for the evaluation|
+|Parameters for tuning |num_epochs, batch_size and learning_rate​|
+|Results for cold_data.csv|Recall@20​ ; ​0.001 <br /> Recall @5 ; 0.003
+|Results for cold_data_1.csv|Recall@20​ ; ​0.0054 <br /> Recall @5 ; 0.0001|
+|Results for cold_data_0.3.csv|Recall@20​ ; ​0.0017 <br /> Recall @5 ; 0.0005|
+|Results for cold_data_0.7.csv|Recall@20​ ; ​0.0013 <br /> Recall @5 ; 0.0003|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn|
+|The used environment|[Queen’s Computing server](https://lobot.caslab.queensu.ca)|
+|Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/bert4coldstart.py |
+
+### Algorithm 2: Peter4ColdStart
+todo check if need to handle all the ev matrics or not
+| |Description |
+|:-----------|:----------|
+|Evaluation matricis|we used this model in all cold-start csv files and used Recall@20 & Recall@5​ for the evaluation|
+|Parameters for tuning |num_epochs, batch_size and learning_rate​|
+|Results for cold_data.csv|Recall@20​ ; ​0.001 <br /> Recall @5 ; 0.003
+|Results for cold_data_1.csv|Recall@20​ ; ​0.0054 <br /> Recall @5 ; 0.0001|
+|Results for cold_data_0.3.csv|Recall@20​ ; ​0.0017 <br /> Recall @5 ; 0.0005|
+|Results for cold_data_0.7.csv|Recall@20​ ; ​0.0013 <br /> Recall @5 ; 0.0003|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn|
+|The used environment|[Queen’s Computing server](https://lobot.caslab.queensu.ca)|
+|Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/bert4coldstart.py |
+
+### Algorithm 3: GRURec model
+todo check if need to handle all the ev matrics or not
+| |Description |
+|:-----------|:----------|
+|Evaluation matricis|we used this model in all cold-start csv files and used Recall@20 & Recall@5​ for the evaluation|
+|Parameters for tuning |num_epochs, batch_size and learning_rate​|
+|Results for cold_data.csv|Recall@20​ ; ​0.001 <br /> Recall @5 ; 0.003
+|Results for cold_data_1.csv|Recall@20​ ; ​0.0054 <br /> Recall @5 ; 0.0001|
+|Results for cold_data_0.3.csv|Recall@20​ ; ​0.0017 <br /> Recall @5 ; 0.0005|
+|Results for cold_data_0.7.csv|Recall@20​ ; ​0.0013 <br /> Recall @5 ; 0.0003|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn|
+|The used environment|[Queen’s Computing server](https://lobot.caslab.queensu.ca)|
+|Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/bert4coldstart.py |
+
+### Algorithm 4: Hybrid recommender model
+todo check if need to handle all the ev matrics or not
+| |Description |
+|:-----------|:----------|
+|Evaluation matricis|we used this model in all cold-start csv files and used Recall@20 & Recall@5​ for the evaluation|
+|Parameters for tuning |num_epochs, batch_size and learning_rate​|
+|Results for cold_data.csv|Recall@20​ ; ​0.001 <br /> Recall @5 ; 0.003
+|Results for cold_data_1.csv|Recall@20​ ; ​0.0054 <br /> Recall @5 ; 0.0001|
+|Results for cold_data_0.3.csv|Recall@20​ ; ​0.0017 <br /> Recall @5 ; 0.0005|
+|Results for cold_data_0.7.csv|Recall@20​ ; ​0.0013 <br /> Recall @5 ; 0.0003|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn|
+|The used environment|[Queen’s Computing server](https://lobot.caslab.queensu.ca)|
+|Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/bert4coldstart.py |
+
+### Algorithm 5: Bert4ColdStart model for specific gender
 todo check if need to handle all the ev matrics or not
 | |Description |
 |:-----------|:----------|
