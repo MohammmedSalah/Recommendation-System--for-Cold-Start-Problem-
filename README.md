@@ -22,7 +22,7 @@ The algorithms we used in this project are:
 - [Bert4Rec model](#algorithm-1-bert4rec-model)
 - [Peter4ColdStart model](#algorithm-2-peter4coldstart)
 - [GRURec model](#algorithm-3-grurec-model)
-- [Bert4ColdStart model for specific gender(2)](algorithm-4-bert4coldstart-model-for-specific-gender2)
+- [Bert4ColdStart model for specific gender(2)](algorithm-4-bert4coldstart-model-for-specific-gender)
 - [Hybrid recommender model](#algorithm-5-hybrid-recommender-model)
 
 More information on each algorithm can be found in the descriptions below.
@@ -36,7 +36,8 @@ More information on each algorithm can be found in the descriptions below.
 |Results for cold_data_1.csv|Recall@20​ ; ​0.0054 <br /> Recall @5 ; 0.0001|
 |Results for cold_data_0.3.csv|Recall@20​ ; ​0.0017 <br /> Recall @5 ; 0.0005|
 |Results for cold_data_0.7.csv|Recall@20​ ; ​0.0013 <br /> Recall @5 ; 0.0003|
-|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn, |
+|sbr_data_1M contribution |We used the data of the SBR file but selected a sample from the file sbr_data_1M.csv as it's too large to be computed|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn, random, time, joblib, pickle, scipy, tqdm|
 |The used environment|[Queen’s Computing server](https://lobot.caslab.queensu.ca)|
 |Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/bert4coldstart.py |
 
@@ -44,12 +45,13 @@ More information on each algorithm can be found in the descriptions below.
 | |Description |
 |:-----------|:----------|
 |Evaluation matricis| We used this model in all cold-start CSV files and used Recall@20 & Recall@5​ for the evaluation|
-|Parameters for tuning |num_epochs, batch_size and learning_rate​|
+|Parameters for tuning |batch_size and learning_rate​|
 |Results for cold_data.csv|Recall@20​ ; ​0.0005 <br /> Recall @5 ; 0.0016
 |Results for cold_data_1.csv|Recall@20​ ; ​0.0025 <br /> Recall @5 ; 0.00007|
 |Results for cold_data_0.3.csv|Recall@20​ ; ​0.0241 <br /> Recall @5 ; 0.0|
 |Results for cold_data_0.7.csv|Recall@20​ ; ​0.0140 <br /> Recall @5 ; 0.0003|
-|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn, random, time, joblib, pickle, scipy, tqdm|
+|sbr_data_1M contribution |We used the data of the SBR file but selected a sample from the file sbr_data_1M.csv as it's too large to be computed|
 |The used environment|[Kaggle Kernel](https://www.kaggle.com/)|
 |Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/peter4coldstart.py |
 
@@ -62,20 +64,21 @@ More information on each algorithm can be found in the descriptions below.
 |Results for cold_data_1.csv|Recall@20​ ; ​0.7707 <br /> Recall @5 ; 0.7101|
 |Results for cold_data_0.3.csv|Recall@20​ ; ​0.7424 <br /> Recall @5 ; 0.6777|
 |Results for cold_data_0.7.csv|Recall@20​ ; ​0.7500 <br /> Recall @5 ; 0.6875|
-|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn, random, time, joblib, pickle, scipy, tqdm|
 |The used environment|[Google Colap](https://colab.research.google.com/?utm_source=scs-index)|
 |Resources|https://arxiv.org/pdf/2107.06427.pdf|
 
-### Algorithm 4: Bert4ColdStart model for specific gender(2)
+### Algorithm 4: Bert4ColdStart model for specific gender
 | |Description |
 |:-----------|:----------|
 |Evaluation matricis| We used this model in all cold-start CSV files and used Recall@20 & Recall@5​ for the evaluation|
 |Parameters for tuning |batch_size and learning_rate​|
-|Results for cold_data.csv|Recall@20​ ; ​0.0022 <br /> Recall @5 ; 0.0008
-|Results for cold_data_1.csv|Recall@20​ ; ​0.0028 <br /> Recall @5 ; 0.0010|
-|Results for cold_data_0.3.csv|Recall@20​ ; ​0.0022 <br /> Recall @5 ; 0.0009|
-|Results for cold_data_0.7.csv|Recall@20​ ; ​0.0028 <br /> Recall @5 ; 0.0006|
-|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn|
+|Results for cold_data.csv with gender=2|Recall@20​ ; ​0.0022 <br /> Recall @5 ; 0.0008
+|Results for cold_data_1.csv with gender=2|Recall@20​ ; ​0.0028 <br /> Recall @5 ; 0.0010|
+|Results for cold_data_0.3.csv with gender=2|Recall@20​ ; ​0.0022 <br /> Recall @5 ; 0.0009|
+|Results for cold_data_0.7.csv with gender=2|Recall@20​ ; ​0.0028 <br /> Recall @5 ; 0.0006|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn, random, time, joblib, pickle, scipy, tqdm|
+|sbr_data_1M contribution |We used the data of the SBR file but selected a sample from the file sbr_data_1M.csv as it's too large to be computed|
 |The used environment|[Queen’s Computing server](https://lobot.caslab.queensu.ca)|
 |Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/bert4coldstart.py |
 
@@ -84,14 +87,14 @@ todo update
 | |Description |
 |:-----------|:----------|
 |Evaluation matricis| We used this model in all cold-start CSV files and used Recall@20 & Recall@5​ for the evaluation|
-|Parameters for tuning |num_epochs, batch_size and learning_rate​|
+|Parameters for tuning |num_epochs and learning_rate​|
 |Results for cold_data.csv|Recall@20​ ; ​0.001 <br /> Recall @5 ; 0.003
 |Results for cold_data_1.csv|Recall@20​ ; ​0.0054 <br /> Recall @5 ; 0.0001|
 |Results for cold_data_0.3.csv|Recall@20​ ; ​0.0017 <br /> Recall @5 ; 0.0005|
 |Results for cold_data_0.7.csv|Recall@20​ ; ​0.0013 <br /> Recall @5 ; 0.0003|
-|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn|
+|Requirements|Python 3.9+, Pytorch, Jupyter Lab, numpy, pandas, matplotlib, seaborn, scikit-learn, random, time, joblib, pickle, scipy, tqdm|
 |The used environment|[Kaggle Kernel](https://www.kaggle.com/)|
-|Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/bert4coldstart.py |
+|Resources|https://www.researchgate.net/publication/364357987_HYBRID_RECOMMENDATION_SYSTEM_TO_SOLVE_COLD_START_PROBLEM |
 
 
 ## Resources
