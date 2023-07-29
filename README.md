@@ -15,14 +15,14 @@ We used the four cold-start files of [Tenrec dataset](https://static.qblv.qq.com
 
 For every version of the cold-start CSV file, we used multiple algorithms and tried to find the most algorithm that fits the specific cold-start version.
 We did a **five implementations** and organized our work as for every cold-start version we did a folder contains 
-- The analysis part of the data and the insights.
+- The analysis part of the data and the insights of the cold start file.
 - The **five implementations** of algorithms.
 
 The algorithms we used in this project are:
 - [Bert4Rec model](#algorithm-1-bert4rec-model)
 - [Peter4ColdStart model](#algorithm-2-peter4coldstart)
 - [GRURec model](#algorithm-3-grurec-model)
-- [Bert4ColdStart model for specific gender(2)](algorithm-4-bert4coldstart-model-for-specific-gender)
+- [Bert4ColdStart model for specific gender (2)](#algorithm-4-bert4coldstart-model-for-specific-gender)
 - [Hybrid recommender model](#algorithm-5-hybrid-recommender-model)
 
 More information on each algorithm can be found in the descriptions below.
