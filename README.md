@@ -83,7 +83,6 @@ More information on each algorithm can be found in the descriptions below.
 |The used environment and running |In this model we used [Queen’s Computing server](https://lobot.caslab.queensu.ca) and implemented for every version of cold start CSV files, to run any implementation of them you just need to load the cold start file with the model version plus the SBR CSV file then run the jupyter notebook normally|
 |Resources|https://github.com/yuangh-x/2022-NIPS-Tenrec/blob/master/model/coldstart/bert4coldstart.py |
 
-todo update
 ### Algorithm 5: Hybrid recommender model
 | |Description |
 |:-----------|:----------|
